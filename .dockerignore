@@ -1,0 +1,6 @@
+.git
+.env.example
+.DS_Store
+.gitignore
+README.md
+venv
