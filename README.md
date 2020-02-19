@@ -2,7 +2,7 @@
 
 Welcome to your new Django project!
 
-## Getting started
+## Getting Started
 
 ```bash
 docker-compose up -d
