@@ -8,6 +8,18 @@ Welcome to your new Django project!
 
 ## Getting Started
 
+### Running the project
+
 ```bash
 docker-compose up -d
 ```
+
+### Development setup
+
+1. Create a new Code Climate Test Reporter ID
+1. Remove the secure Code Climate Test Reporter ID in [`.travis.yml`](./.travis.yml)
+1. Run :
+
+    ```bash
+    travis encrypt CC_TEST_REPORTER_ID=<new_test_id> --add env.global
+    ```
