@@ -17,3 +17,12 @@ services:
         working_dir: /usr/src/app
         volumes:
             - .:/usr/src/app
+        links:
+            - postgres
+        environment:
+            DATABASE_URL: postgres://postgres@postgres/postgres
+
+    postgres:
+        image: postgres:latest
+        ports:
+            - 5432:5432
