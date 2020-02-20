@@ -7,7 +7,6 @@ jobs:
           python: "3.7"
           env:
               - DATABASE_URL=postgres://postgres@localhost/travis_ci_test
-              - SECRET_KEY=565c9d74-6a8d-42fd-8f69-3c6f9f23c62d
           services:
               - postgresql
           before_script:
@@ -23,6 +22,8 @@ jobs:
         - name: Deployment checklist
           stage: test
           python: "3.7"
-          env:
-              - SECRET_KEY=565c9d74-6a8d-42fd-8f69-3c6f9f23c62d
           script: python manage.py check --deploy
+
+env:
+    global:
+        - SECRET_KEY=565c9d74-6a8d-42fd-8f69-3c6f9f23c62d
