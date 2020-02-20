@@ -9,7 +9,7 @@ load_dotenv(find_dotenv())
 
 ENVIRONMENT = os.getenv("ENVIRONMENT", "production")
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SECRET_KEY = "f*kg*s513dmc-%n%10518*o^e66ky@6hidv)0+tl^%4$t)e^9="
+SECRET_KEY = os.getenv("SECRET_KEY")
 DEBUG = os.getenv("DEBUG", "false").lower() == "true"
 ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "localhost,0.0.0.0").split(",")
 
