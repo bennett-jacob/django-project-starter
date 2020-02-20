@@ -6,7 +6,7 @@ jobs:
           stage: test
           python: "3.7"
           env:
-              - DATABASE_URL=postgres://postgres@localhost/postgres
+              - DATABASE_URL=postgres://postgres@localhost/travis_ci_test
           services:
               - postgresql
           before_script:
