@@ -1,1 +1,16 @@
 language: python
+
+python:
+    - "3.6"
+    - "3.7"
+    - "3.8"
+
+jobs:
+    include:
+        - name: "Unit test"
+          stage: test
+          script: coverage run --source='.' manage.py test
+
+        - name: "Lint"
+          stage: test
+          script: black . --check
