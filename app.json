@@ -7,11 +7,13 @@
   "env": {
     "SECRET_KEY": {
       "description": "A secret key for verifying the integrity of signed cookies.",
-      "generator": "secret"
+      "generator": "secret",
+      "required": true
     },
     "ALLOWED_HOSTS": {
       "description": "Comma-separated list of allowed hosts (see https://docs.djangoproject.com/en/dev/ref/settings/#allowed-hosts)",
-      "value": "django-project-starter.herokuapp.com"
+      "value": "django-project-starter.herokuapp.com",
+      "required": true
     }
   },
   "formation": {
