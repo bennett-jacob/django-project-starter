@@ -9,9 +9,17 @@ jobs:
           services:
               - postgresql
           before_script:
+              # add a postgres database
               - psql -c 'create database travis_ci_test;' -U postgres
+              # enable Code Climate coverage
+              # https://docs.codeclimate.com/docs/travis-ci-test-coverage
+              - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+              - chmod +x ./cc-test-reporter
+              - ./cc-test-reporter before-build
           script: coverage run --source='.' manage.py test
-          after_script: coverage report
+          after_script:
+              - coverage report
+              - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
         - name: Lint
           stage: test
           python: "3.7"
