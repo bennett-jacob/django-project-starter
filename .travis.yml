@@ -38,6 +38,6 @@ jobs:
 
 env:
     global:
-        - SECRET_KEY=565c9d74-6a8d-42fd-8f69-3c6f9f23c62d
+        - SECRET_KEY=*&_vta+lomg9)329cbtosyv0u-+%xj&cr40$u70rqsjx5=hz5-
         # Test Reporter ID for CodeClimate
         - secure: rRJ/jaogzjU2kgzuq6Pov3KCWm/cDzKL2WDo6soLD7GivZUoKds3mYst15/TgidSL24DWmSD6AdM6Z45kanAzytKgzzLn4PuhU/aXUdue9CeR/08aAZNzZSN+oa5Y+9WuSQJl4aCF4/OxzrWVL7eyoWFxZYiy0Cy1jpEMKJViTXa7ZkPpHDIC9AP30i6YJDoVrVP0YUZWDUZWSXiuEwyq2FP4wfWfdn1vDa6ZeZpv+w6SbTaISk6BhOECiLI7h9hl3G3Ff7Znc6tp9YoARJ/lyOSsJ5cp+9tBsrlDnDjcidoOX7w96R1DQtFzYXtXLNbZFqwkdYYDOgk0RL96e03jdG20TWLyRwUDtPaZa1AdRWD3Y8TM5thrSHJyyXGxRhGft0/GsRdB3L0MWaAaYbfAv6vph/lKPgfFfNM1vm9+fRLe5UsLdufJukBZDAmUwipgM44YAhMDDcVAdmCKpEfXveTruFpCF0FkaXDIhKpFcrRGMDKJNr3EXien26y1ny4ekg8diwRWReQqeQ4RCwmNWe1Tv9haDql9DEVZUfY2OHIoAbWbHU5wBO6yWG/ciuv+i1Ou2jRD4jFhrWQuGh+tHHNfu7DymTrRA2O0W2DoM67fKyFT0bwgdjJB6xG4RCB6fUCKoXtQbYJleFczINO/iZacoRM3pa0OHu7rOoMUUI=
