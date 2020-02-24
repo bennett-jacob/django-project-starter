@@ -25,11 +25,11 @@ jobs:
           python: "3.7"
           script: python manage.py check --deploy
 
-        - name: Safety check
+        - name: Dependency checks
           stage: test
           script: safety check
 
-        - name: Radon checks
+        - name: Code sniff
           stage: test
           script: >-
               radon cc .
