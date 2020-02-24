@@ -31,9 +31,9 @@ jobs:
 
         - name: Radon checks
           stage: test
-          script:
-              - radon cc .
-              - radon mi .
+          script: >-
+              radon cc .
+              && radon mi .
 
 env:
     global:
